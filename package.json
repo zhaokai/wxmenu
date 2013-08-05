@@ -1,0 +1,29 @@
+{
+  "name": "wechat_menu",
+  "version": "1.0.0",
+  "description": "wechat menu api service",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "~2.8.4",
+    "mysql": "~2.0.0-alpha8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhaokai/wxmenu.git"
+  },
+  "keywords": [
+    "wechat",
+    "menu",
+    "service"
+  ],
+  "author": "Edwin Zhao",
+  "license": "personal",
+  "gitHead": "3ed3b8ae025512aa2f1e7c2e58592828019493e1",
+  "bugs": {
+    "url": "https://github.com/zhaokai/wxmenu/issues"
+  }
+}
