@@ -37,7 +37,9 @@ var handler = function (req, res, next) {
         if(result.access_token) {
           setting.set('access_token', result.access_token);
           setting.set('expires_in', result.expires_in);
-          setting.set('expires_time', Date.now());
+          var now = Date.now();
+          setting.set('expires_now', now);
+          setting.set('expires_time', now + result.expires_in*1000);
           ret = true;
           console.log('got token: ', setting.get('access_token'), 'expires_in', setting.get('expires_in'), 'expires_time', setting.get('expires_time'));
         }
